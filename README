@@ -1,0 +1,17 @@
+TracksObjC
+==========
+An objective-c implementation of the Tracks REST API.
+
+Supports:
+
+- Read
+  - /todos.xml TBD
+  - /todos/ID.xml TBD
+  - /contexts.xml TBD
+  - /contexts/ID.xml TBD
+  - /contexts/ID/todos.xml TBD
+  - /projects.xml TBD
+  - /projects/ID.xml TBD
+  - /projects/ID/todos.xml TBD
+- Write
+  - TBD

@@ -15,6 +15,14 @@
 		4703B07A132F6CDE002B866F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4703B078132F6CDE002B866F /* InfoPlist.strings */; };
 		4703B07D132F6CDE002B866F /* TracksObjCTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4703B07C132F6CDE002B866F /* TracksObjCTests.h */; };
 		4703B07F132F6CDE002B866F /* TracksObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703B07E132F6CDE002B866F /* TracksObjCTests.m */; };
+		4703B096132F74F6002B866F /* todos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B08B132F74F6002B866F /* todos.xml */; };
+		4703B097132F74F6002B866F /* 9361.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B08C132F74F6002B866F /* 9361.xml */; };
+		4703B098132F74F6002B866F /* contexts.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B08D132F74F6002B866F /* contexts.xml */; };
+		4703B099132F74F6002B866F /* todos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B090132F74F6002B866F /* todos.xml */; };
+		4703B09A132F74F6002B866F /* 9999.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B091132F74F6002B866F /* 9999.xml */; };
+		4703B09B132F74F6002B866F /* projects.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B092132F74F6002B866F /* projects.xml */; };
+		4703B09C132F74F6002B866F /* 229275.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B094132F74F6002B866F /* 229275.xml */; };
+		4703B09D132F74F6002B866F /* todos.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4703B095132F74F6002B866F /* todos.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,15 +38,25 @@
 /* Begin PBXFileReference section */
 		4703B05F132F6CDE002B866F /* libTracksObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTracksObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703B062132F6CDE002B866F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4703B066132F6CDE002B866F /* TracksObjC-Prefix.pch */ = {isa = PBXFileReference; path = "TracksObjC-Prefix.pch"; sourceTree = "<group>"; };
+		4703B066132F6CDE002B866F /* TracksObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TracksObjC-Prefix.pch"; sourceTree = "<group>"; };
 		4703B06C132F6CDE002B866F /* TracksObjCTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TracksObjCTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703B06D132F6CDE002B866F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4703B070132F6CDE002B866F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4703B077132F6CDE002B866F /* TracksObjCTests-Info.plist */ = {isa = PBXFileReference; path = "TracksObjCTests-Info.plist"; sourceTree = "<group>"; };
+		4703B077132F6CDE002B866F /* TracksObjCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TracksObjCTests-Info.plist"; sourceTree = "<group>"; };
 		4703B079132F6CDE002B866F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4703B07B132F6CDE002B866F /* TracksObjCTests-Prefix.pch */ = {isa = PBXFileReference; path = "TracksObjCTests-Prefix.pch"; sourceTree = "<group>"; };
+		4703B07B132F6CDE002B866F /* TracksObjCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TracksObjCTests-Prefix.pch"; sourceTree = "<group>"; };
 		4703B07C132F6CDE002B866F /* TracksObjCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TracksObjCTests.h; sourceTree = "<group>"; };
 		4703B07E132F6CDE002B866F /* TracksObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TracksObjCTests.m; sourceTree = "<group>"; };
+		4703B08B132F74F6002B866F /* todos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = todos.xml; sourceTree = "<group>"; };
+		4703B08C132F74F6002B866F /* 9361.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 9361.xml; sourceTree = "<group>"; };
+		4703B08D132F74F6002B866F /* contexts.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = contexts.xml; sourceTree = "<group>"; };
+		4703B090132F74F6002B866F /* todos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = todos.xml; sourceTree = "<group>"; };
+		4703B091132F74F6002B866F /* 9999.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 9999.xml; sourceTree = "<group>"; };
+		4703B092132F74F6002B866F /* projects.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = projects.xml; sourceTree = "<group>"; };
+		4703B094132F74F6002B866F /* 229275.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 229275.xml; sourceTree = "<group>"; };
+		4703B095132F74F6002B866F /* todos.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = todos.xml; sourceTree = "<group>"; };
+		4703B09E132F7A8D002B866F /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
+		4703B09F132F7AE2002B866F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +85,8 @@
 		4703B054132F6CDD002B866F = {
 			isa = PBXGroup;
 			children = (
+				4703B09F132F7AE2002B866F /* README */,
+				4703B09E132F7A8D002B866F /* LICENCE */,
 				4703B064132F6CDE002B866F /* TracksObjC */,
 				4703B075132F6CDE002B866F /* TracksObjCTests */,
 				4703B061132F6CDE002B866F /* Frameworks */,
@@ -112,6 +132,7 @@
 		4703B075132F6CDE002B866F /* TracksObjCTests */ = {
 			isa = PBXGroup;
 			children = (
+				4703B088132F74F6002B866F /* TestData */,
 				4703B07C132F6CDE002B866F /* TracksObjCTests.h */,
 				4703B07E132F6CDE002B866F /* TracksObjCTests.m */,
 				4703B076132F6CDE002B866F /* Supporting Files */,
@@ -127,6 +148,61 @@
 				4703B07B132F6CDE002B866F /* TracksObjCTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4703B088132F74F6002B866F /* TestData */ = {
+			isa = PBXGroup;
+			children = (
+				4703B089132F74F6002B866F /* contexts */,
+				4703B08D132F74F6002B866F /* contexts.xml */,
+				4703B08E132F74F6002B866F /* projects */,
+				4703B092132F74F6002B866F /* projects.xml */,
+				4703B093132F74F6002B866F /* todos */,
+				4703B095132F74F6002B866F /* todos.xml */,
+			);
+			path = TestData;
+			sourceTree = SOURCE_ROOT;
+		};
+		4703B089132F74F6002B866F /* contexts */ = {
+			isa = PBXGroup;
+			children = (
+				4703B08A132F74F6002B866F /* 9358 */,
+				4703B08C132F74F6002B866F /* 9361.xml */,
+			);
+			path = contexts;
+			sourceTree = "<group>";
+		};
+		4703B08A132F74F6002B866F /* 9358 */ = {
+			isa = PBXGroup;
+			children = (
+				4703B08B132F74F6002B866F /* todos.xml */,
+			);
+			path = 9358;
+			sourceTree = "<group>";
+		};
+		4703B08E132F74F6002B866F /* projects */ = {
+			isa = PBXGroup;
+			children = (
+				4703B08F132F74F6002B866F /* 26042 */,
+				4703B091132F74F6002B866F /* 9999.xml */,
+			);
+			path = projects;
+			sourceTree = "<group>";
+		};
+		4703B08F132F74F6002B866F /* 26042 */ = {
+			isa = PBXGroup;
+			children = (
+				4703B090132F74F6002B866F /* todos.xml */,
+			);
+			path = 26042;
+			sourceTree = "<group>";
+		};
+		4703B093132F74F6002B866F /* todos */ = {
+			isa = PBXGroup;
+			children = (
+				4703B094132F74F6002B866F /* 229275.xml */,
+			);
+			path = todos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +287,14 @@
 			files = (
 				4703B07A132F6CDE002B866F /* InfoPlist.strings in Resources */,
 				4703B07D132F6CDE002B866F /* TracksObjCTests.h in Resources */,
+				4703B096132F74F6002B866F /* todos.xml in Resources */,
+				4703B097132F74F6002B866F /* 9361.xml in Resources */,
+				4703B098132F74F6002B866F /* contexts.xml in Resources */,
+				4703B099132F74F6002B866F /* todos.xml in Resources */,
+				4703B09A132F74F6002B866F /* 9999.xml in Resources */,
+				4703B09B132F74F6002B866F /* projects.xml in Resources */,
+				4703B09C132F74F6002B866F /* 229275.xml in Resources */,
+				4703B09D132F74F6002B866F /* todos.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
