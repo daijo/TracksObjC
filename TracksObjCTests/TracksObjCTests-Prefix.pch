@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'TracksObjCTests' target in the 'TracksObjCTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
