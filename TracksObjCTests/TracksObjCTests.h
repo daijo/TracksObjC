@@ -10,8 +10,9 @@
 
 
 @interface TracksObjCTests : SenTestCase {
-@private
     
 }
+
+- (void)testExample;
 
 @end

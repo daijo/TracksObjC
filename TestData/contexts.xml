@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contexts type="array">
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:17+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9358</id>
+    <name>At home</name>
+    <position type="integer">1</position>
+    <updated-at type="datetime">2010-02-27T09:58:55+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:19+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9359</id>
+    <name>At work</name>
+    <position type="integer">2</position>
+    <updated-at type="datetime">2010-02-27T09:58:57+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:21+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9360</id>
+    <name>Online</name>
+    <position type="integer">3</position>
+    <updated-at type="datetime">2010-02-27T09:58:59+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:23+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9361</id>
+    <name>Errands</name>
+    <position type="integer">4</position>
+    <updated-at type="datetime">2010-02-27T09:59:00+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:24+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9362</id>
+    <name>Contact</name>
+    <position type="integer">5</position>
+    <updated-at type="datetime">2010-02-27T09:59:02+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-02-27T09:45:26+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9363</id>
+    <name>Read</name>
+    <position type="integer">6</position>
+    <updated-at type="datetime">2010-02-27T09:59:03+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-03-02T13:28:01+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">9720</id>
+    <name>Write</name>
+    <position type="integer">7</position>
+    <updated-at type="datetime">2010-03-02T13:28:01+00:00</updated-at>
+  </context>
+  <context>
+    <created-at type="datetime">2010-03-07T22:23:09+00:00</created-at>
+    <hide type="boolean">false</hide>
+    <id type="integer">10341</id>
+    <name>View</name>
+    <position type="integer">8</position>
+    <updated-at type="datetime">2010-03-07T22:23:09+00:00</updated-at>
+  </context>
+</contexts>

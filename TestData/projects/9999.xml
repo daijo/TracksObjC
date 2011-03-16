@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <completed-at type="datetime" nil="true"></completed-at>
+  <created-at type="datetime">2010-03-02T08:59:18+00:00</created-at>
+  <default-context-id type="integer" nil="true"></default-context-id>
+  <default-tags></default-tags>
+  <description></description>
+  <id type="integer">9999</id>
+  <name>Photography</name>
+  <position type="integer">6</position>
+  <state>active</state>
+  <updated-at type="datetime">2010-09-03T06:07:39+01:00</updated-at>
+</project>

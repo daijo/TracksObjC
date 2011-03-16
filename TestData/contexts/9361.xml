@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<context>
+  <created-at type="datetime">2010-02-27T09:45:23+00:00</created-at>
+  <hide type="boolean">false</hide>
+  <id type="integer">9361</id>
+  <name>Errands</name>
+  <position type="integer">4</position>
+  <updated-at type="datetime">2010-02-27T09:59:00+00:00</updated-at>
+</context>

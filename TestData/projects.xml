@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects type="array">
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-02-27T09:45:29+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">9722</id>
+    <name>Going mobile</name>
+    <position type="integer">1</position>
+    <state>hidden</state>
+    <updated-at type="datetime">2010-08-31T12:48:20+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-02-27T09:45:30+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">9723</id>
+    <name>Personal Development</name>
+    <position type="integer">2</position>
+    <state>active</state>
+    <updated-at type="datetime">2011-01-16T02:43:46+00:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-02-27T12:42:38+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">9730</id>
+    <name>Chinese</name>
+    <position type="integer">3</position>
+    <state>hidden</state>
+    <updated-at type="datetime">2010-09-02T16:23:21+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-02-27T12:51:00+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags nil="true"></default-tags>
+    <description nil="true"></description>
+    <id type="integer">9731</id>
+    <name>GTD</name>
+    <position type="integer">4</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-02-27T12:51:00+00:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-02-27T13:01:50+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags nil="true"></default-tags>
+    <description nil="true"></description>
+    <id type="integer">9732</id>
+    <name>Economy</name>
+    <position type="integer">5</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-02-27T13:01:50+00:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-03-02T08:59:18+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">9999</id>
+    <name>Photography</name>
+    <position type="integer">6</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-09-03T06:07:39+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-08-03T06:37:38+01:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">26042</id>
+    <name>danielhjort.net</name>
+    <position type="integer">7</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-09-02T16:17:55+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-08-03T06:49:41+01:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags nil="true"></default-tags>
+    <description nil="true"></description>
+    <id type="integer">26047</id>
+    <name>Patchwork Solutions AB</name>
+    <position type="integer">8</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-08-03T06:49:41+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-08-03T18:21:56+01:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">26143</id>
+    <name>MacPorts</name>
+    <position type="integer">9</position>
+    <state>active</state>
+    <updated-at type="datetime">2011-01-16T02:46:45+00:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-11-29T07:37:50+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags nil="true"></default-tags>
+    <description nil="true"></description>
+    <id type="integer">37123</id>
+    <name>Wardrobe</name>
+    <position type="integer">10</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-11-29T07:37:50+00:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime">2010-09-10T17:15:16+01:00</completed-at>
+    <created-at type="datetime">2010-09-02T16:17:17+01:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">29466</id>
+    <name>LTE</name>
+    <position type="integer">10</position>
+    <state>completed</state>
+    <updated-at type="datetime">2010-09-10T17:15:16+01:00</updated-at>
+  </project>
+  <project>
+    <completed-at type="datetime" nil="true"></completed-at>
+    <created-at type="datetime">2010-12-21T02:36:39+00:00</created-at>
+    <default-context-id type="integer" nil="true"></default-context-id>
+    <default-tags></default-tags>
+    <description></description>
+    <id type="integer">38697</id>
+    <name>Home</name>
+    <position type="integer">11</position>
+    <state>active</state>
+    <updated-at type="datetime">2010-12-22T02:52:00+00:00</updated-at>
+  </project>
+</projects>
