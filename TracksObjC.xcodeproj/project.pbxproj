@@ -13,10 +13,19 @@
 		4703B071132F6CDE002B866F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B070132F6CDE002B866F /* CoreGraphics.framework */; };
 		4703B074132F6CDE002B866F /* libTracksObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B05F132F6CDE002B866F /* libTracksObjC.a */; };
 		4703B07A132F6CDE002B866F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4703B078132F6CDE002B866F /* InfoPlist.strings */; };
-		4703B07D132F6CDE002B866F /* TracksObjCTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 4703B07C132F6CDE002B866F /* TracksObjCTests.h */; };
-		4703B07F132F6CDE002B866F /* TracksObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703B07E132F6CDE002B866F /* TracksObjCTests.m */; };
 		4703B0C31330E1D1002B866F /* PWSTracksTodoImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4703B0C11330E1D1002B866F /* PWSTracksTodoImp.h */; };
 		4703B0C41330E1D1002B866F /* PWSTracksTodoImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703B0C21330E1D1002B866F /* PWSTracksTodoImp.m */; };
+		4703B0C81330EDC3002B866F /* PWSTracksTodo.h in Headers */ = {isa = PBXBuildFile; fileRef = 4703B0C71330EDC3002B866F /* PWSTracksTodo.h */; };
+		4703B0CA1330EE8C002B866F /* PWSTracksTodoService.h in Headers */ = {isa = PBXBuildFile; fileRef = 4703B0C91330EE8C002B866F /* PWSTracksTodoService.h */; };
+		4703B0CC1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */; };
+		4703B0D21331BFFD002B866F /* PWSTracksServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 4703B0D11331BFFD002B866F /* PWSTracksServiceFactory.h */; };
+		4703B0D41331C076002B866F /* PWSTracksServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4703B0D31331C076002B866F /* PWSTracksServiceFactory.m */; };
+		470AF91A1331CA6100130215 /* TodoServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 470AF9161331C96C00130215 /* TodoServiceTest.m */; };
+		470AF91E1331DE0500130215 /* PWSTracksBaseFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 470AF91C1331DE0500130215 /* PWSTracksBaseFactory.h */; };
+		470AF91F1331DE0500130215 /* PWSTracksBaseFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 470AF91D1331DE0500130215 /* PWSTracksBaseFactory.m */; };
+		470AF92213322D9500130215 /* PWSTracksTodoFactoryDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 470AF92113322D9500130215 /* PWSTracksTodoFactoryDelegate.h */; };
+		470AF925133231F900130215 /* PWSTracksTodoServiceImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 470AF923133231F800130215 /* PWSTracksTodoServiceImp.h */; };
+		470AF926133231F900130215 /* PWSTracksTodoServiceImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 470AF924133231F800130215 /* PWSTracksTodoServiceImp.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +48,22 @@
 		4703B077132F6CDE002B866F /* TracksObjCTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TracksObjCTests-Info.plist"; sourceTree = "<group>"; };
 		4703B079132F6CDE002B866F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4703B07B132F6CDE002B866F /* TracksObjCTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TracksObjCTests-Prefix.pch"; sourceTree = "<group>"; };
-		4703B07C132F6CDE002B866F /* TracksObjCTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TracksObjCTests.h; sourceTree = "<group>"; };
-		4703B07E132F6CDE002B866F /* TracksObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TracksObjCTests.m; sourceTree = "<group>"; };
 		4703B09E132F7A8D002B866F /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		4703B09F132F7AE2002B866F /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		4703B0C11330E1D1002B866F /* PWSTracksTodoImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoImp.h; path = Implementation/PWSTracksTodoImp.h; sourceTree = "<group>"; };
 		4703B0C21330E1D1002B866F /* PWSTracksTodoImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksTodoImp.m; path = Implementation/PWSTracksTodoImp.m; sourceTree = "<group>"; };
+		4703B0C71330EDC3002B866F /* PWSTracksTodo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodo.h; path = Interface/PWSTracksTodo.h; sourceTree = "<group>"; };
+		4703B0C91330EE8C002B866F /* PWSTracksTodoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoService.h; path = Interface/PWSTracksTodoService.h; sourceTree = "<group>"; };
+		4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoServiceDelegate.h; path = Interface/PWSTracksTodoServiceDelegate.h; sourceTree = "<group>"; };
+		4703B0D11331BFFD002B866F /* PWSTracksServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksServiceFactory.h; path = Interface/PWSTracksServiceFactory.h; sourceTree = "<group>"; };
+		4703B0D31331C076002B866F /* PWSTracksServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksServiceFactory.m; path = Implementation/PWSTracksServiceFactory.m; sourceTree = "<group>"; };
+		470AF9151331C96C00130215 /* TodoServiceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoServiceTest.h; sourceTree = "<group>"; };
+		470AF9161331C96C00130215 /* TodoServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoServiceTest.m; sourceTree = "<group>"; };
+		470AF91C1331DE0500130215 /* PWSTracksBaseFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksBaseFactory.h; path = Implementation/PWSTracksBaseFactory.h; sourceTree = "<group>"; };
+		470AF91D1331DE0500130215 /* PWSTracksBaseFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksBaseFactory.m; path = Implementation/PWSTracksBaseFactory.m; sourceTree = "<group>"; };
+		470AF92113322D9500130215 /* PWSTracksTodoFactoryDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoFactoryDelegate.h; path = Implementation/PWSTracksTodoFactoryDelegate.h; sourceTree = "<group>"; };
+		470AF923133231F800130215 /* PWSTracksTodoServiceImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoServiceImp.h; path = Implementation/PWSTracksTodoServiceImp.h; sourceTree = "<group>"; };
+		470AF924133231F800130215 /* PWSTracksTodoServiceImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksTodoServiceImp.m; path = Implementation/PWSTracksTodoServiceImp.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,8 +141,8 @@
 		4703B075132F6CDE002B866F /* TracksObjCTests */ = {
 			isa = PBXGroup;
 			children = (
-				4703B07C132F6CDE002B866F /* TracksObjCTests.h */,
-				4703B07E132F6CDE002B866F /* TracksObjCTests.m */,
+				470AF9151331C96C00130215 /* TodoServiceTest.h */,
+				470AF9161331C96C00130215 /* TodoServiceTest.m */,
 				4703B076132F6CDE002B866F /* Supporting Files */,
 			);
 			path = TracksObjCTests;
@@ -142,8 +161,9 @@
 		4703B0C51330E215002B866F /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				4703B0C11330E1D1002B866F /* PWSTracksTodoImp.h */,
-				4703B0C21330E1D1002B866F /* PWSTracksTodoImp.m */,
+				4703B0D31331C076002B866F /* PWSTracksServiceFactory.m */,
+				470AF91B1331DD8600130215 /* Common */,
+				4703B0D51331C0BC002B866F /* TodoService */,
 			);
 			name = Implementation;
 			sourceTree = "<group>";
@@ -151,8 +171,41 @@
 		4703B0C61330E57C002B866F /* Interface */ = {
 			isa = PBXGroup;
 			children = (
+				4703B0D11331BFFD002B866F /* PWSTracksServiceFactory.h */,
+				4703B0C71330EDC3002B866F /* PWSTracksTodo.h */,
+				4703B0C91330EE8C002B866F /* PWSTracksTodoService.h */,
+				4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */,
 			);
 			name = Interface;
+			sourceTree = "<group>";
+		};
+		4703B0D51331C0BC002B866F /* TodoService */ = {
+			isa = PBXGroup;
+			children = (
+				470AF92013322D3500130215 /* TodoFactories */,
+				470AF923133231F800130215 /* PWSTracksTodoServiceImp.h */,
+				470AF924133231F800130215 /* PWSTracksTodoServiceImp.m */,
+				4703B0C11330E1D1002B866F /* PWSTracksTodoImp.h */,
+				4703B0C21330E1D1002B866F /* PWSTracksTodoImp.m */,
+			);
+			name = TodoService;
+			sourceTree = "<group>";
+		};
+		470AF91B1331DD8600130215 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				470AF91C1331DE0500130215 /* PWSTracksBaseFactory.h */,
+				470AF91D1331DE0500130215 /* PWSTracksBaseFactory.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		470AF92013322D3500130215 /* TodoFactories */ = {
+			isa = PBXGroup;
+			children = (
+				470AF92113322D9500130215 /* PWSTracksTodoFactoryDelegate.h */,
+			);
+			name = TodoFactories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +216,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4703B0C31330E1D1002B866F /* PWSTracksTodoImp.h in Headers */,
+				4703B0C81330EDC3002B866F /* PWSTracksTodo.h in Headers */,
+				4703B0CA1330EE8C002B866F /* PWSTracksTodoService.h in Headers */,
+				4703B0CC1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h in Headers */,
+				4703B0D21331BFFD002B866F /* PWSTracksServiceFactory.h in Headers */,
+				470AF91E1331DE0500130215 /* PWSTracksBaseFactory.h in Headers */,
+				470AF92213322D9500130215 /* PWSTracksTodoFactoryDelegate.h in Headers */,
+				470AF925133231F900130215 /* PWSTracksTodoServiceImp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +297,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4703B07A132F6CDE002B866F /* InfoPlist.strings in Resources */,
-				4703B07D132F6CDE002B866F /* TracksObjCTests.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +324,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4703B0C41330E1D1002B866F /* PWSTracksTodoImp.m in Sources */,
+				4703B0D41331C076002B866F /* PWSTracksServiceFactory.m in Sources */,
+				470AF91F1331DE0500130215 /* PWSTracksBaseFactory.m in Sources */,
+				470AF926133231F900130215 /* PWSTracksTodoServiceImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4703B07F132F6CDE002B866F /* TracksObjCTests.m in Sources */,
+				470AF91A1331CA6100130215 /* TodoServiceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +423,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TracksObjCTests/TracksObjCTests-Prefix.pch";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "SRCROOT=@\\\"$(SRCROOT)\\\"";
 				INFOPLIST_FILE = "TracksObjCTests/TracksObjCTests-Info.plist";
 				OTHER_LDFLAGS = (
 					"-framework",
