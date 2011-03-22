@@ -1,6 +1,6 @@
 TracksObjC
 ==========
-An objective-c implementation of the Tracks REST API.
+An objective-c/iOS implementation of the Tracks REST API.
 
 Supports:
 

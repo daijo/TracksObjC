@@ -12,9 +12,8 @@
 
 #import "TodoServiceTest.h"
 #import "PWSTracksTodo.h"
-#import "PWSTracksTodoService.h"
 #import "PWSTracksBaseFactory.h"
-#import "PWSTracksServiceFactory.h"
+#import "PWSTracksTodoServiceFactory.h"
 
 
 @implementation TodoServiceTest
@@ -54,7 +53,7 @@ done, receivedError;
     
 	[self initTestCase:NSStringFromSelector(_cmd)];
     
-	[[[PWSTracksServiceFactory todoServiceWithDelegate:self] retain] getTodos];
+	[[PWSTracksTodoServiceFactory getTodos:self] retain];
 	
 	while (self.testCaseLock) {
 		
@@ -75,20 +74,20 @@ done, receivedError;
     
 }
 
--(void)todoService:(id<PWSTracksTodoService>)todoService gotTodo:(id<PWSTracksTodo>)todo {
+-(void)todoService:(id<PWSTracksService>)todoService gotTodo:(id<PWSTracksTodo>)todo {
     
     self.todoCount++;
     
     [todo release];
 }
--(void)todoServiceFinished:(id<PWSTracksTodoService>)todoService {
+-(void)todoServiceFinished:(id<PWSTracksService>)todoService {
     
     self.testCaseLock = NO;
 	self.done = YES;
 	
 	[todoService release];
 }
--(void)todoService:(id<PWSTracksTodoService>)todoService didFailWithError:(NSError *)error{
+-(void)todoService:(id<PWSTracksService>)todoService didFailWithError:(NSError *)error{
     
     self.testCaseLock = NO;
 	self.doneWithErrors = YES;

@@ -8,9 +8,10 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "PWSTracksTodoServiceDelegate.h"
+#import "PWSTracksServiceDelegate.h"
 
 
-@interface TodoServiceTest : SenTestCase <PWSTracksTodoServiceDelegate> {
+@interface TodoServiceTest : SenTestCase <PWSTracksTodoServiceDelegate, PWSTracksServiceDelegate> {
     BOOL testCaseLock;
 	BOOL response;
 	NSInteger todoCount;

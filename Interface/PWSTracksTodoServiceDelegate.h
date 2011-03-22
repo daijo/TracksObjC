@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PWSTracksTodo.h"
-#import "PWSTracksTodoService.h"
 
+@protocol PWSTracksTodo;
+@protocol PWSTracksService;
+@protocol PWSTracksServiceDelegate;
 
-@protocol PWSTracksTodoServiceDelegate <NSObject>
+@protocol PWSTracksTodoServiceDelegate <PWSTracksServiceDelegate>
 
--(void)todoService:(id<PWSTracksTodoService>)todoService gotTodo:(id<PWSTracksTodo>)todo;
--(void)todoServiceFinished:(id<PWSTracksTodoService>)todoService;
--(void)todoService:(id<PWSTracksTodoService>)todoService didFailWithError:(NSError *)error;
+-(void)todoService:(id<PWSTracksService>)todoService gotTodo:(id<PWSTracksTodo>)todo;
 
 @end

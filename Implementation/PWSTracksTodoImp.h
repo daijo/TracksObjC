@@ -7,10 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "PWSTracksTodo.h"
 
 
-@interface PWSTracksTodoImp : NSObject {
-    
+@interface PWSTracksTodoImp : NSObject <PWSTracksTodo> {
+    NSString *description;
+    NSString *notes;
+    NSString *state;
+    NSNumber *ID;
+    NSNumber *contextID;
+    NSNumber *projectID;
+    NSNumber *recurringTodoID;
+    NSDate *completedAt;
+    NSDate *createdAt;
+    NSDate *dueAt;
+    NSDate *showFrom;
+    NSDate *updatedAt;
+    NSURL  *IPAddress;
 }
+
++(id<PWSTracksTodo>) todo;
 
 @end
