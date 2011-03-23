@@ -11,9 +11,10 @@
 
 @protocol PWSTracksTodo <NSObject>
 
-@property (copy) NSString *description;
+@property (copy) NSString *title;
 @property (copy) NSString *notes;
 @property (copy) NSString *state;
+@property (copy) NSString  *IPAddress;
 @property (copy) NSNumber *ID;
 @property (copy) NSNumber *contextID;
 @property (copy) NSNumber *projectID;
@@ -23,6 +24,5 @@
 @property (retain) NSDate *dueAt;
 @property (retain) NSDate *showFrom;
 @property (retain) NSDate *updatedAt;
-@property (retain) NSURL  *IPAddress;
 
 @end

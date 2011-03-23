@@ -1,17 +1,17 @@
 TracksObjC
 ==========
-An objective-c/iOS implementation of the Tracks REST API.
+An Objective-C/iOS implementation of the Tracks REST API.
 
 Supports:
 
 - Read
-  - /todos.xml TBD
-  - /todos/ID.xml TBD
+  - /todos.xml
+  - /todos/ID.xml
   - /contexts.xml TBD
   - /contexts/ID.xml TBD
-  - /contexts/ID/todos.xml TBD
+  - /contexts/ID/todos.xml
   - /projects.xml TBD
   - /projects/ID.xml TBD
-  - /projects/ID/todos.xml TBD
+  - /projects/ID/todos.xml
 - Write
   - TBD

@@ -11,9 +11,10 @@
 
 @implementation PWSTracksTodoImp
 
-@synthesize description;
+@synthesize title;
 @synthesize notes;
 @synthesize state;
+@synthesize IPAddress;
 @synthesize ID;
 @synthesize contextID;
 @synthesize projectID;
@@ -23,13 +24,13 @@
 @synthesize dueAt;
 @synthesize showFrom;
 @synthesize updatedAt;
-@synthesize IPAddress;
 
 +(id<PWSTracksTodo>)todo {
 	return [[[PWSTracksTodoImp alloc] init] autorelease]; 
 }
 
 -(NSString *)description {
+    //return @"Test desc";
 	return [NSString
 			stringWithFormat:@"\nSTART - PWSTracksTodo\n"
 			"Description:%@\n"
@@ -44,7 +45,7 @@
 			"Updated At:%@\n"
 			"IP Address:%@\n"
 			"END - PWSTracksTodo\n",
-            self.description,
+            self.title,
             self.notes,
             self.state,
             self.ID,
@@ -60,7 +61,7 @@
 }
 
 - (void)dealloc {
-    self.description = nil;
+    self.title = nil;
     self.notes = nil;
     self.state = nil;
     self.ID = nil;

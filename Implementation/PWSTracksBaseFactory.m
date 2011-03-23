@@ -11,19 +11,60 @@
 
 @implementation PWSTracksBaseFactory
 
-@synthesize parser, connection, receivedData;
-
 static NSString * serverAddress = @"http://my.gtdify.com";
 
+#pragma mark -
+#pragma mark Memory and member management
+
+//Copy
+@synthesize request;
+
+//Retain
+@synthesize receivedData, currentStringValue, parser, connection, delegate,
+endElement, startElement;
+
+//Assign
+@synthesize failSent, cancelling;
+
+-(void)cleanUp {
+    
+    self.delegate = nil;
+    self.receivedData = nil;
+    self.request = nil;
+    self.connection = nil;
+    self.parser = nil;
+    self.currentStringValue = nil;
+}
+
+-(void)dealloc {
+    
+    [self cleanUp];
+    [super dealloc];
+}
+
+-(void)setParser:(NSXMLParser *)newParser {
+    
+    [parser abortParsing];
+    [parser release];
+    parser = [newParser retain];
+}
+
+-(void)setConnection:(NSURLConnection *)newConnection {
+    
+    [connection cancel];
+    [connection release];
+    connection = [newConnection retain];
+}
+
 +(void)setServerAddress:(NSString *)newServerAddress {
-	
-	[serverAddress release];
-	serverAddress = [newServerAddress retain];
+    
+    [serverAddress release];
+    serverAddress = [newServerAddress retain];
 }
 
 +(NSString *)serverAddress {
-	
-	return serverAddress;
+    
+    return serverAddress;
 }
 
 #pragma mark -
@@ -32,32 +73,31 @@ static NSString * serverAddress = @"http://my.gtdify.com";
 
 -(id<PWSTracksService>)initWithDelegate:(id<PWSTracksServiceDelegate>)newDelegate {
     
-    /*if (self = [super init]){
+    if ((self = [super init])){
         self.delegate = newDelegate;
         self.cancelling = NO;
         self.failSent = NO;
-    }*/
+    }
     return self;
 }
 
 -(void)handleErrorWithCode:(PWSTracksError)code {
     
-    /*if (!self.cancelling && !self.failSent) {
+    if (!self.cancelling && !self.failSent) {
         
         self.failSent = YES;
         
-        [self.delegate gitHubService:self
+        [self.delegate tracksService:self
                     didFailWithError:[NSError
-                                      errorWithDomain:GitHubServerErrorDomain
+                                      errorWithDomain:PWSTracksErrorDomain
                                       code:code
                                       userInfo:nil]];
         
         [self cleanUp];
-    }*/
+    }
 }
 
 - (void)makeRequest:(NSString *) url {
-    NSLog(@"Begin: makeRequest url=%@", url);
     
 	//self.request = url;
 	NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:url]
@@ -69,8 +109,6 @@ static NSString * serverAddress = @"http://my.gtdify.com";
         
         self.receivedData = [NSMutableData data];
     }
-    
-    NSLog(@"End: makeRequest");
 }
 
 #pragma mark -
@@ -82,48 +120,44 @@ didStartElement:(NSString *)elementName
  namespaceURI:(NSString *)namespaceURI 
 qualifiedName:(NSString *)qName
    attributes:(NSDictionary *)attributeDict {
-    NSLog(@"Begin: didStartElement %@", elementName);
     
-    /*SEL aSel = [[self.startElement objectForKey:elementName] pointerValue];
+    SEL aSel = [[self.startElement objectForKey:elementName] pointerValue];
     
     if (aSel) {
-        
         [self performSelector:aSel withObject:elementName withObject:attributeDict];
     }
-    self.currentStringValue = [NSMutableString stringWithCapacity:100];*/
+    self.currentStringValue = [NSMutableString stringWithCapacity:100];
 }
 
 -(void)parser:(NSXMLParser *)parser
 didEndElement:(NSString *)elementName
  namespaceURI:(NSString *)namespaceURI
 qualifiedName:(NSString *)qName {
-    NSLog(@"Begin: didEndElement %@", elementName);
-    /*SEL aSel = [[self.endElement objectForKey:elementName] pointerValue];
+
+    SEL aSel = [[self.endElement objectForKey:elementName] pointerValue];
     
     if (aSel) {
-        
         [self performSelector:aSel withObject:elementName];
     }
-    self.currentStringValue = nil;*/
+    self.currentStringValue = nil;
 }
 
 -(void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-    //[self.currentStringValue appendString:string];
+    [self.currentStringValue appendString:string];
 }
 
 -(void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
     
-    //[self handleErrorWithCode:GitHubServerParserError];
+    [self handleErrorWithCode:PWSTracksParserError];
 }
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
     
-   /* if (!self.failSent && !self.cancelling) {
-        
-        [self.delegate gitHubServiceDone:self];
+    if (!self.failSent && !self.cancelling) {
+        [self.delegate tracksServiceDone:self];
         [self cleanUp];
-    }*/
+    }
 }
 
 
@@ -131,22 +165,22 @@ qualifiedName:(NSString *)qName {
 #pragma mark NSURLConnectionDelegate
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-    NSLog(@"Begin: didReceiveResponse");
+
     [self.receivedData setLength:0];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    NSLog(@"Begin: didReceiveData");
+
     [self.receivedData appendData:data];
 }
 
 -(void)connection:(NSURLConnection *)connection
  didFailWithError:(NSError *)error {
-    // handle error
+    [self handleErrorWithCode:PWSTracksConnectionError];
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"Begin: connectionDidFinishLoading");
+
     
     self.parser = [[[NSXMLParser alloc]
                     initWithData:self.receivedData] autorelease];
@@ -155,8 +189,33 @@ qualifiedName:(NSString *)qName {
     [self.parser parse];
     self.connection = nil;
     self.receivedData = nil;
+}
+
+#pragma mark -
+#pragma mark Interface implementation
+#pragma mark - Class
+
+NSString * const PWSTracksErrorDomain = @"PWSTracksErrorDomain";
+
+#pragma mark - Instance
+
+-(void)cancelRequest {
     
-    NSLog(@"End: connectionDidFinishLoading");
+    self.cancelling = YES;
+    [self cleanUp];
+}
+
+-(NSDate *)createDateFromString:(NSString *)string {
+    
+    NSDate *retVal = nil;
+    
+    if ([string length] == 25) {
+        
+        //'2011-03-05T00:03:46+00:00' -> '2011-03-05 00:03:46 +00:00'
+        retVal = [NSDate dateWithString:
+                  [[string stringByReplacingOccurrencesOfString:@"T" withString:@" "] stringByReplacingOccurrencesOfString:@"+" withString:@" +"]];
+    }
+    return retVal;
 }
 
 @end

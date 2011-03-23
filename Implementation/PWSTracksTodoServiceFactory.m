@@ -14,6 +14,7 @@
 @implementation PWSTracksTodoServiceFactory
 
 +(id<PWSTracksService>)getTodos:(id<PWSTracksTodoServiceDelegate>)delegate {
+    
     PWSTracksTodoFactory *service = [PWSTracksTodoFactory
                                   todoFactoryWithDelegate:delegate];
     
@@ -23,17 +24,32 @@
 
 +(id<PWSTracksService>)getTodoById:(NSNumber *)todoId
                       delegate:(id<PWSTracksTodoServiceDelegate>)delegate {
-    return nil;
+    
+    PWSTracksTodoFactory *service = [PWSTracksTodoFactory
+                                     todoFactoryWithDelegate:delegate];
+    
+	[service getTodoById:todoId];
+	return service;
 }
 
 +(id<PWSTracksService>)getTodosByContextId:(NSNumber *)contextId
                               delegate:(id<PWSTracksTodoServiceDelegate>)delegate {
-    return nil;
+    
+    PWSTracksTodoFactory *service = [PWSTracksTodoFactory
+                                     todoFactoryWithDelegate:delegate];
+    
+	[service getTodosByContextId:contextId];
+	return service;
 }
 
 +(id<PWSTracksService>)getTodosByProjectId:(NSNumber *)projectId
                               delegate:(id<PWSTracksTodoServiceDelegate>)delegate {
-    return nil;
+
+    PWSTracksTodoFactory *service = [PWSTracksTodoFactory
+                                     todoFactoryWithDelegate:delegate];
+
+	[service getTodosByProjectId:projectId];
+	return service;
 }
 
 @end

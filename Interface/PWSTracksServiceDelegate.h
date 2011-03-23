@@ -12,7 +12,7 @@
 
 @protocol PWSTracksServiceDelegate <NSObject>
 
--(void)tracksService:(id<PWSTracksService>)gitHubService
+-(void)tracksService:(id<PWSTracksService>)tracksService
     didFailWithError:(NSError *)error;
 -(void)tracksServiceDone:(id<PWSTracksService>)tracksService;
 

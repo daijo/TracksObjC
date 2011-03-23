@@ -15,10 +15,10 @@
 
 +(id<PWSTracksService>)getTodos:(id<PWSTracksTodoServiceDelegate>)delegate;
 +(id<PWSTracksService>)getTodoById:(NSNumber *)todoId
-delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
+                          delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
 +(id<PWSTracksService>)getTodosByContextId:(NSNumber *)contextId
-delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
+                                  delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
 +(id<PWSTracksService>)getTodosByProjectId:(NSNumber *)projectId
-delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
+                                  delegate:(id<PWSTracksTodoServiceDelegate>)delegate;
 
 @end

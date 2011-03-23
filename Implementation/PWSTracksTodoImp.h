@@ -11,9 +11,10 @@
 
 
 @interface PWSTracksTodoImp : NSObject <PWSTracksTodo> {
-    NSString *description;
+    NSString *title;
     NSString *notes;
     NSString *state;
+    NSString  *IPAddress;
     NSNumber *ID;
     NSNumber *contextID;
     NSNumber *projectID;
@@ -23,7 +24,6 @@
     NSDate *dueAt;
     NSDate *showFrom;
     NSDate *updatedAt;
-    NSURL  *IPAddress;
 }
 
 +(id<PWSTracksTodo>) todo;
