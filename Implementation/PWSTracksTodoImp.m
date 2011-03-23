@@ -30,7 +30,7 @@
 }
 
 -(NSString *)description {
-    //return @"Test desc";
+    
 	return [NSString
 			stringWithFormat:@"\nSTART - PWSTracksTodo\n"
 			"Description:%@\n"
@@ -61,6 +61,7 @@
 }
 
 - (void)dealloc {
+    
     self.title = nil;
     self.notes = nil;
     self.state = nil;

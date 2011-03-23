@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47019435133A086C00EB711A /* PWSTracksContextServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */; };
+		47019439133A08A700EB711A /* PWSTracksContextServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */; };
+		47019442133A0E6500EB711A /* PWSTracksContextImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019440133A0E6500EB711A /* PWSTracksContextImp.h */; };
+		47019443133A0E6500EB711A /* PWSTracksContextImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019441133A0E6500EB711A /* PWSTracksContextImp.m */; };
 		4703B063132F6CDE002B866F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B062132F6CDE002B866F /* Foundation.framework */; };
 		4703B06E132F6CDE002B866F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B06D132F6CDE002B866F /* UIKit.framework */; };
 		4703B06F132F6CDE002B866F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B062132F6CDE002B866F /* Foundation.framework */; };
@@ -26,6 +30,8 @@
 		47642D161338B9E0005CA836 /* PWSTracksTodoServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47642D141338B9DF005CA836 /* PWSTracksTodoServiceFactory.m */; };
 		47642D1D1338C197005CA836 /* PWSTracksTodoFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47642D1B1338C197005CA836 /* PWSTracksTodoFactory.h */; };
 		47642D1E1338C197005CA836 /* PWSTracksTodoFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47642D1C1338C197005CA836 /* PWSTracksTodoFactory.m */; };
+		47642D2C133A0202005CA836 /* PWSTracksContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 47642D2B133A0202005CA836 /* PWSTracksContext.h */; };
+		47642D2E133A04FF005CA836 /* PWSTracksContextServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 47642D2D133A04FF005CA836 /* PWSTracksContextServiceDelegate.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksContextServiceFactory.m; path = Implementation/PWSTracksContextServiceFactory.m; sourceTree = "<group>"; };
+		47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContextServiceFactory.h; path = Interface/PWSTracksContextServiceFactory.h; sourceTree = "<group>"; };
+		47019440133A0E6500EB711A /* PWSTracksContextImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSTracksContextImp.h; sourceTree = "<group>"; };
+		47019441133A0E6500EB711A /* PWSTracksContextImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSTracksContextImp.m; sourceTree = "<group>"; };
 		4703B05F132F6CDE002B866F /* libTracksObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTracksObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703B062132F6CDE002B866F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4703B066132F6CDE002B866F /* TracksObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TracksObjC-Prefix.pch"; sourceTree = "<group>"; };
@@ -64,6 +74,8 @@
 		47642D141338B9DF005CA836 /* PWSTracksTodoServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksTodoServiceFactory.m; path = Implementation/PWSTracksTodoServiceFactory.m; sourceTree = "<group>"; };
 		47642D1B1338C197005CA836 /* PWSTracksTodoFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksTodoFactory.h; path = Implementation/PWSTracksTodoFactory.h; sourceTree = "<group>"; };
 		47642D1C1338C197005CA836 /* PWSTracksTodoFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksTodoFactory.m; path = Implementation/PWSTracksTodoFactory.m; sourceTree = "<group>"; };
+		47642D2B133A0202005CA836 /* PWSTracksContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContext.h; path = Interface/PWSTracksContext.h; sourceTree = "<group>"; };
+		47642D2D133A04FF005CA836 /* PWSTracksContextServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContextServiceDelegate.h; path = Interface/PWSTracksContextServiceDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				470AF91B1331DD8600130215 /* Common */,
+				47642D2F133A053E005CA836 /* ContextService */,
 				4703B0D51331C0BC002B866F /* TodoService */,
 			);
 			name = Implementation;
@@ -170,11 +183,14 @@
 		4703B0C61330E57C002B866F /* Interface */ = {
 			isa = PBXGroup;
 			children = (
-				4703B0D11331BFFD002B866F /* PWSTracksTodoServiceFactory.h */,
-				4703B0C71330EDC3002B866F /* PWSTracksTodo.h */,
-				4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */,
 				470AF9391338A9CA00130215 /* PWSTracksServiceDelegate.h */,
 				47642D101338AD70005CA836 /* PWSTracksService.h */,
+				47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */,
+				47642D2D133A04FF005CA836 /* PWSTracksContextServiceDelegate.h */,
+				47642D2B133A0202005CA836 /* PWSTracksContext.h */,
+				4703B0D11331BFFD002B866F /* PWSTracksTodoServiceFactory.h */,
+				4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */,
+				4703B0C71330EDC3002B866F /* PWSTracksTodo.h */,
 			);
 			name = Interface;
 			sourceTree = "<group>";
@@ -182,10 +198,11 @@
 		4703B0D51331C0BC002B866F /* TodoService */ = {
 			isa = PBXGroup;
 			children = (
-				470AF92013322D3500130215 /* TodoFactories */,
+				47642D141338B9DF005CA836 /* PWSTracksTodoServiceFactory.m */,
+				47642D1B1338C197005CA836 /* PWSTracksTodoFactory.h */,
+				47642D1C1338C197005CA836 /* PWSTracksTodoFactory.m */,
 				4703B0C11330E1D1002B866F /* PWSTracksTodoImp.h */,
 				4703B0C21330E1D1002B866F /* PWSTracksTodoImp.m */,
-				47642D141338B9DF005CA836 /* PWSTracksTodoServiceFactory.m */,
 			);
 			name = TodoService;
 			sourceTree = "<group>";
@@ -199,13 +216,14 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
-		470AF92013322D3500130215 /* TodoFactories */ = {
+		47642D2F133A053E005CA836 /* ContextService */ = {
 			isa = PBXGroup;
 			children = (
-				47642D1B1338C197005CA836 /* PWSTracksTodoFactory.h */,
-				47642D1C1338C197005CA836 /* PWSTracksTodoFactory.m */,
+				47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */,
+				47019440133A0E6500EB711A /* PWSTracksContextImp.h */,
+				47019441133A0E6500EB711A /* PWSTracksContextImp.m */,
 			);
-			name = TodoFactories;
+			name = ContextService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +241,10 @@
 				470AF93A1338A9CA00130215 /* PWSTracksServiceDelegate.h in Headers */,
 				47642D111338AD70005CA836 /* PWSTracksService.h in Headers */,
 				47642D1D1338C197005CA836 /* PWSTracksTodoFactory.h in Headers */,
+				47642D2C133A0202005CA836 /* PWSTracksContext.h in Headers */,
+				47642D2E133A04FF005CA836 /* PWSTracksContextServiceDelegate.h in Headers */,
+				47019439133A08A700EB711A /* PWSTracksContextServiceFactory.h in Headers */,
+				47019442133A0E6500EB711A /* PWSTracksContextImp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +349,8 @@
 				470AF91F1331DE0500130215 /* PWSTracksBaseFactory.m in Sources */,
 				47642D161338B9E0005CA836 /* PWSTracksTodoServiceFactory.m in Sources */,
 				47642D1E1338C197005CA836 /* PWSTracksTodoFactory.m in Sources */,
+				47019435133A086C00EB711A /* PWSTracksContextServiceFactory.m in Sources */,
+				47019443133A0E6500EB711A /* PWSTracksContextImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
