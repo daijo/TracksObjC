@@ -1,20 +1,20 @@
 //
-//  TodoServiceTest.h
+//  ContextServiceTest.h
 //  TracksObjC
 //
-//  Created by Daniel Hjort on 3/17/11.
+//  Created by Daniel Hjort on 3/24/11.
 //  Copyright 2011 Patchwork Solutions AB. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "PWSTracksTodoServiceDelegate.h"
+#import "PWSTracksContextServiceDelegate.h"
 #import "PWSTracksServiceDelegate.h"
 
 
-@interface TodoServiceTest : SenTestCase <PWSTracksTodoServiceDelegate, PWSTracksServiceDelegate> {
+@interface ContextServiceTest : SenTestCase <PWSTracksContextServiceDelegate, PWSTracksServiceDelegate> {
     BOOL testCaseLock;
 	BOOL response;
-	NSInteger todoCount;
+	NSInteger contextCount;
 	NSInteger testCaseTime;
 	NSString *testCase;
 	BOOL done;
@@ -26,15 +26,13 @@
 @property (assign) BOOL doneWithErrors;
 @property (assign) BOOL done;
 @property (assign) BOOL response;
-@property (assign) NSInteger todoCount;
+@property (assign) NSInteger contextCount;
 @property (assign) NSInteger testCaseTime;
 @property (copy) NSString *testCase;
 @property (copy) NSError *receivedError;
 
-- (void)testGetTodos;
-- (void)testGetTodoById;
-- (void)testTryGetTodoByNonExistentId;
-- (void)testGetTodosByContextId;
-- (void)testGetTodosByProjectId;
+- (void)testGetContexts;
+- (void)testGetContextById;
+- (void)testTryGetContextByNonExistentId;
 
 @end

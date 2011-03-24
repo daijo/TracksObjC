@@ -10,7 +10,7 @@
   </context>
   <context>
     <created-at type="datetime">2010-02-27T09:45:19+00:00</created-at>
-    <hide type="boolean">false</hide>
+    <hide type="boolean">true</hide>
     <id type="integer">9359</id>
     <name>At work</name>
     <position type="integer">2</position>

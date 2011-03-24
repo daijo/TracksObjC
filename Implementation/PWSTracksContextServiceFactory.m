@@ -7,17 +7,28 @@
 //
 
 #import "PWSTracksContextServiceFactory.h"
+#import "PWSTracksContextFactory.h"
 
 
 @implementation PWSTracksContextServiceFactory
 
 +(id<PWSTracksService>)getContexts:(id<PWSTracksContextServiceDelegate>)delegate {
-    return nil;
+
+    PWSTracksContextFactory *service = [PWSTracksContextFactory
+                                     contextFactoryWithDelegate:delegate];
+    
+	[service getContexts];
+	return service;
 }
 
 +(id<PWSTracksService>)getContextById:(NSNumber *)contextId
                              delegate:(id<PWSTracksContextServiceDelegate>)delegate {
-    return nil;
+
+    PWSTracksContextFactory *service = [PWSTracksContextFactory
+                                        contextFactoryWithDelegate:delegate];
+    
+	[service getContextById:contextId];
+	return service;
 }
 
 @end
