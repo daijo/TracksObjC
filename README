@@ -7,8 +7,8 @@ Supports:
 - Read
   - /todos.xml
   - /todos/[ID].xml
-  - /contexts.xml TBD
-  - /contexts/[ID].xml TBD
+  - /contexts.xml
+  - /contexts/[ID].xml
   - /contexts/[ID]/todos.xml
   - /projects.xml TBD
   - /projects/[ID].xml TBD
