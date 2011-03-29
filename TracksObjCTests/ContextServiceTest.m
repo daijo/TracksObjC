@@ -65,8 +65,33 @@ done, receivedError;
 	if(self.receivedError != nil) {
 		STFail([self.receivedError description]);
 	}
-	STAssertTrue(self.contextCount == 8, @"Didn't receive 8 todos");
+	STAssertTrue(self.contextCount == 8, @"Didn't receive 8 contexts");
 	STAssertTrue(self.done, @"Done not sent");
+    
+}
+
+- (void)testGetContextsAndCancel {
+    
+    [self initTestCase:NSStringFromSelector(_cmd)];
+    
+	[[PWSTracksContextServiceFactory getContexts:self] retain];
+	
+	while (self.testCaseLock) {
+		
+		[[NSRunLoop currentRunLoop]
+         runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
+        
+		if(self.testCaseTime == 2) {
+			self.testCaseLock = NO;
+		}
+		self.testCaseTime++;
+	}
+	STAssertFalse(self.doneWithErrors, @"Fail with errors sent");
+	if(self.receivedError != nil) {
+		STFail([self.receivedError description]);
+	}
+	STAssertTrue(self.contextCount == 1, @"Didn't receive 1 contexts");
+	STAssertFalse(self.done, @"Done sent");
     
 }
 
@@ -91,7 +116,7 @@ done, receivedError;
 	if(self.receivedError != nil) {
 		STFail([self.receivedError description]);
 	}
-	STAssertTrue(self.contextCount == 1, @"Didn't receive 1 todos");
+	STAssertTrue(self.contextCount == 1, @"Didn't receive 1 contexts");
 	STAssertTrue(self.done, @"Done not sent");
     
 }
@@ -114,7 +139,7 @@ done, receivedError;
 		self.testCaseTime++;
 	}
 	STAssertTrue(self.doneWithErrors, @"Fail with errors not sent");
-	STAssertTrue(self.contextCount == 0, @"Didn't receive 0 todos");
+	STAssertTrue(self.contextCount == 0, @"Didn't receive 0 contexts");
 	STAssertFalse(self.done, @"Done sent");
     
 }
@@ -240,6 +265,16 @@ done, receivedError;
                 
 				break;
 		}
+    } else if ([self.testCase isEqualToString:@"testGetContextsAndCancel"]) {
+        switch (self.contextCount) {
+			case 0:
+                [contextService cancelRequest];
+                break;
+                
+			default:
+                
+				break;
+        }
     }
     
     self.contextCount++;

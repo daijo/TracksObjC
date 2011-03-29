@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		47019435133A086C00EB711A /* PWSTracksContextServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */; };
 		47019439133A08A700EB711A /* PWSTracksContextServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */; };
-		47019442133A0E6500EB711A /* PWSTracksContextImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019440133A0E6500EB711A /* PWSTracksContextImp.h */; };
-		47019443133A0E6500EB711A /* PWSTracksContextImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019441133A0E6500EB711A /* PWSTracksContextImp.m */; };
 		47019447133AD9A400EB711A /* PWSTracksContextFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019445133AD9A400EB711A /* PWSTracksContextFactory.h */; };
 		47019448133AD9A400EB711A /* PWSTracksContextFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019446133AD9A400EB711A /* PWSTracksContextFactory.m */; };
 		4701944B133ADA4900EB711A /* ContextServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701944A133ADA4900EB711A /* ContextServiceTest.m */; };
+		4701944D133B55B300EB711A /* PWSTracksProject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4701944C133B55B300EB711A /* PWSTracksProject.h */; };
+		47019490133C5C6D00EB711A /* PWSTracksProjectServiceFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701948E133C5C6D00EB711A /* PWSTracksProjectServiceFactory.m */; };
+		47019492133C5CC300EB711A /* PWSTracksProjectServiceFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019491133C5CC300EB711A /* PWSTracksProjectServiceFactory.h */; };
+		47019495133C5D4B00EB711A /* PWSTracksContextImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019493133C5D4A00EB711A /* PWSTracksContextImp.h */; };
+		47019496133C5D4B00EB711A /* PWSTracksContextImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 47019494133C5D4A00EB711A /* PWSTracksContextImp.m */; };
+		47019498133C5D8400EB711A /* PWSTracksProjectServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 47019497133C5D8400EB711A /* PWSTracksProjectServiceDelegate.h */; };
+		4701949B1341A98800EB711A /* ProjectServiceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4701949A1341A98700EB711A /* ProjectServiceTest.m */; };
+		470194A21341EA3600EB711A /* PWSTracksProjectFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 470194A01341EA3500EB711A /* PWSTracksProjectFactory.h */; };
+		470194A31341EA3600EB711A /* PWSTracksProjectFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 470194A11341EA3500EB711A /* PWSTracksProjectFactory.m */; };
+		470194A61341EAF600EB711A /* PWSTracksProjectImp.h in Headers */ = {isa = PBXBuildFile; fileRef = 470194A41341EAF500EB711A /* PWSTracksProjectImp.h */; };
+		470194A71341EAF600EB711A /* PWSTracksProjectImp.m in Sources */ = {isa = PBXBuildFile; fileRef = 470194A51341EAF500EB711A /* PWSTracksProjectImp.m */; };
 		4703B063132F6CDE002B866F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B062132F6CDE002B866F /* Foundation.framework */; };
 		4703B06E132F6CDE002B866F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B06D132F6CDE002B866F /* UIKit.framework */; };
 		4703B06F132F6CDE002B866F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4703B062132F6CDE002B866F /* Foundation.framework */; };
@@ -50,12 +59,22 @@
 /* Begin PBXFileReference section */
 		47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksContextServiceFactory.m; path = Implementation/PWSTracksContextServiceFactory.m; sourceTree = "<group>"; };
 		47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContextServiceFactory.h; path = Interface/PWSTracksContextServiceFactory.h; sourceTree = "<group>"; };
-		47019440133A0E6500EB711A /* PWSTracksContextImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PWSTracksContextImp.h; sourceTree = "<group>"; };
-		47019441133A0E6500EB711A /* PWSTracksContextImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PWSTracksContextImp.m; sourceTree = "<group>"; };
 		47019445133AD9A400EB711A /* PWSTracksContextFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContextFactory.h; path = Implementation/PWSTracksContextFactory.h; sourceTree = "<group>"; };
 		47019446133AD9A400EB711A /* PWSTracksContextFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksContextFactory.m; path = Implementation/PWSTracksContextFactory.m; sourceTree = "<group>"; };
 		47019449133ADA4900EB711A /* ContextServiceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextServiceTest.h; sourceTree = "<group>"; };
 		4701944A133ADA4900EB711A /* ContextServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextServiceTest.m; sourceTree = "<group>"; };
+		4701944C133B55B300EB711A /* PWSTracksProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksProject.h; path = Interface/PWSTracksProject.h; sourceTree = "<group>"; };
+		4701948E133C5C6D00EB711A /* PWSTracksProjectServiceFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksProjectServiceFactory.m; path = Implementation/PWSTracksProjectServiceFactory.m; sourceTree = "<group>"; };
+		47019491133C5CC300EB711A /* PWSTracksProjectServiceFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksProjectServiceFactory.h; path = Interface/PWSTracksProjectServiceFactory.h; sourceTree = "<group>"; };
+		47019493133C5D4A00EB711A /* PWSTracksContextImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksContextImp.h; path = Implementation/PWSTracksContextImp.h; sourceTree = "<group>"; };
+		47019494133C5D4A00EB711A /* PWSTracksContextImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksContextImp.m; path = Implementation/PWSTracksContextImp.m; sourceTree = "<group>"; };
+		47019497133C5D8400EB711A /* PWSTracksProjectServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksProjectServiceDelegate.h; path = Interface/PWSTracksProjectServiceDelegate.h; sourceTree = "<group>"; };
+		470194991341A98700EB711A /* ProjectServiceTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectServiceTest.h; sourceTree = "<group>"; };
+		4701949A1341A98700EB711A /* ProjectServiceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectServiceTest.m; sourceTree = "<group>"; };
+		470194A01341EA3500EB711A /* PWSTracksProjectFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksProjectFactory.h; path = Implementation/PWSTracksProjectFactory.h; sourceTree = "<group>"; };
+		470194A11341EA3500EB711A /* PWSTracksProjectFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksProjectFactory.m; path = Implementation/PWSTracksProjectFactory.m; sourceTree = "<group>"; };
+		470194A41341EAF500EB711A /* PWSTracksProjectImp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PWSTracksProjectImp.h; path = Implementation/PWSTracksProjectImp.h; sourceTree = "<group>"; };
+		470194A51341EAF500EB711A /* PWSTracksProjectImp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PWSTracksProjectImp.m; path = Implementation/PWSTracksProjectImp.m; sourceTree = "<group>"; };
 		4703B05F132F6CDE002B866F /* libTracksObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTracksObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4703B062132F6CDE002B866F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4703B066132F6CDE002B866F /* TracksObjC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TracksObjC-Prefix.pch"; sourceTree = "<group>"; };
@@ -108,6 +127,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4701944E133B56AC00EB711A /* ProjectService */ = {
+			isa = PBXGroup;
+			children = (
+				4701948E133C5C6D00EB711A /* PWSTracksProjectServiceFactory.m */,
+				470194A01341EA3500EB711A /* PWSTracksProjectFactory.h */,
+				470194A11341EA3500EB711A /* PWSTracksProjectFactory.m */,
+				470194A41341EAF500EB711A /* PWSTracksProjectImp.h */,
+				470194A51341EAF500EB711A /* PWSTracksProjectImp.m */,
+			);
+			name = ProjectService;
+			sourceTree = "<group>";
+		};
 		4703B054132F6CDD002B866F = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +193,8 @@
 			children = (
 				47019449133ADA4900EB711A /* ContextServiceTest.h */,
 				4701944A133ADA4900EB711A /* ContextServiceTest.m */,
+				470194991341A98700EB711A /* ProjectServiceTest.h */,
+				4701949A1341A98700EB711A /* ProjectServiceTest.m */,
 				470AF9151331C96C00130215 /* TodoServiceTest.h */,
 				470AF9161331C96C00130215 /* TodoServiceTest.m */,
 				4703B076132F6CDE002B866F /* Supporting Files */,
@@ -184,6 +217,7 @@
 			children = (
 				470AF91B1331DD8600130215 /* Common */,
 				47642D2F133A053E005CA836 /* ContextService */,
+				4701944E133B56AC00EB711A /* ProjectService */,
 				4703B0D51331C0BC002B866F /* TodoService */,
 			);
 			name = Implementation;
@@ -197,6 +231,9 @@
 				47019438133A08A700EB711A /* PWSTracksContextServiceFactory.h */,
 				47642D2D133A04FF005CA836 /* PWSTracksContextServiceDelegate.h */,
 				47642D2B133A0202005CA836 /* PWSTracksContext.h */,
+				47019491133C5CC300EB711A /* PWSTracksProjectServiceFactory.h */,
+				47019497133C5D8400EB711A /* PWSTracksProjectServiceDelegate.h */,
+				4701944C133B55B300EB711A /* PWSTracksProject.h */,
 				4703B0D11331BFFD002B866F /* PWSTracksTodoServiceFactory.h */,
 				4703B0CB1330EFE7002B866F /* PWSTracksTodoServiceDelegate.h */,
 				4703B0C71330EDC3002B866F /* PWSTracksTodo.h */,
@@ -231,8 +268,8 @@
 				47019434133A086C00EB711A /* PWSTracksContextServiceFactory.m */,
 				47019445133AD9A400EB711A /* PWSTracksContextFactory.h */,
 				47019446133AD9A400EB711A /* PWSTracksContextFactory.m */,
-				47019440133A0E6500EB711A /* PWSTracksContextImp.h */,
-				47019441133A0E6500EB711A /* PWSTracksContextImp.m */,
+				47019493133C5D4A00EB711A /* PWSTracksContextImp.h */,
+				47019494133C5D4A00EB711A /* PWSTracksContextImp.m */,
 			);
 			name = ContextService;
 			sourceTree = "<group>";
@@ -255,8 +292,13 @@
 				47642D2C133A0202005CA836 /* PWSTracksContext.h in Headers */,
 				47642D2E133A04FF005CA836 /* PWSTracksContextServiceDelegate.h in Headers */,
 				47019439133A08A700EB711A /* PWSTracksContextServiceFactory.h in Headers */,
-				47019442133A0E6500EB711A /* PWSTracksContextImp.h in Headers */,
 				47019447133AD9A400EB711A /* PWSTracksContextFactory.h in Headers */,
+				4701944D133B55B300EB711A /* PWSTracksProject.h in Headers */,
+				47019492133C5CC300EB711A /* PWSTracksProjectServiceFactory.h in Headers */,
+				47019495133C5D4B00EB711A /* PWSTracksContextImp.h in Headers */,
+				47019498133C5D8400EB711A /* PWSTracksProjectServiceDelegate.h in Headers */,
+				470194A21341EA3600EB711A /* PWSTracksProjectFactory.h in Headers */,
+				470194A61341EAF600EB711A /* PWSTracksProjectImp.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +404,11 @@
 				47642D161338B9E0005CA836 /* PWSTracksTodoServiceFactory.m in Sources */,
 				47642D1E1338C197005CA836 /* PWSTracksTodoFactory.m in Sources */,
 				47019435133A086C00EB711A /* PWSTracksContextServiceFactory.m in Sources */,
-				47019443133A0E6500EB711A /* PWSTracksContextImp.m in Sources */,
 				47019448133AD9A400EB711A /* PWSTracksContextFactory.m in Sources */,
+				47019490133C5C6D00EB711A /* PWSTracksProjectServiceFactory.m in Sources */,
+				47019496133C5D4B00EB711A /* PWSTracksContextImp.m in Sources */,
+				470194A31341EA3600EB711A /* PWSTracksProjectFactory.m in Sources */,
+				470194A71341EAF600EB711A /* PWSTracksProjectImp.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +418,7 @@
 			files = (
 				470AF91A1331CA6100130215 /* TodoServiceTest.m in Sources */,
 				4701944B133ADA4900EB711A /* ContextServiceTest.m in Sources */,
+				4701949B1341A98800EB711A /* ProjectServiceTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

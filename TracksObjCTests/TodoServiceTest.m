@@ -74,6 +74,31 @@ done, receivedError;
     
 }
 
+- (void)testGetTodosAndCancel {
+    
+	[self initTestCase:NSStringFromSelector(_cmd)];
+    
+	[[PWSTracksTodoServiceFactory getTodos:self] retain];
+	
+	while (self.testCaseLock) {
+		
+		[[NSRunLoop currentRunLoop]
+         runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
+        
+		if(self.testCaseTime == 2) {
+			self.testCaseLock = NO;
+		}
+		self.testCaseTime++;
+	}
+	STAssertFalse(self.doneWithErrors, @"Fail with errors sent");
+	if(self.receivedError != nil) {
+		STFail([self.receivedError description]);
+	}
+	STAssertTrue(self.todoCount == 1, @"Didn't receive 1 todos");
+	STAssertFalse(self.done, @"Done sent");
+    
+}
+
 - (void)testGetTodoById {
     
 	[self initTestCase:NSStringFromSelector(_cmd)];
@@ -457,6 +482,16 @@ done, receivedError;
                 
 				break;
 		}
+    } else if ([self.testCase isEqualToString:@"testGetTodosAndCancel"]) {
+        switch (self.todoCount) {
+			case 0:
+                [todoService cancelRequest];
+                break;
+                
+			default:
+                
+				break;
+        }
     }
 
     self.todoCount++;

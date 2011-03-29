@@ -10,8 +10,8 @@ Supports:
   - /contexts.xml
   - /contexts/[ID].xml
   - /contexts/[ID]/todos.xml
-  - /projects.xml TBD
-  - /projects/[ID].xml TBD
+  - /projects.xml
+  - /projects/[ID].xml
   - /projects/[ID]/todos.xml
 - Write
   - TBD

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projects type="array">
   <project>
-    <completed-at type="datetime" nil="true"></completed-at>
+    <completed-at type="datetime">2010-08-31T12:48:20+01:00</completed-at>
     <created-at type="datetime">2010-02-27T09:45:29+00:00</created-at>
-    <default-context-id type="integer" nil="true"></default-context-id>
-    <default-tags></default-tags>
-    <description></description>
+    <default-context-id type="integer">9999</default-context-id>
+    <default-tags>hej, hopp</default-tags>
+    <description>Bla bla bla.</description>
     <id type="integer">9722</id>
     <name>Going mobile</name>
     <position type="integer">1</position>

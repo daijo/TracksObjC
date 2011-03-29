@@ -32,6 +32,7 @@
 @property (copy) NSError *receivedError;
 
 - (void)testGetTodos;
+- (void)testGetTodosAndCancel;
 - (void)testGetTodoById;
 - (void)testTryGetTodoByNonExistentId;
 - (void)testGetTodosByContextId;
